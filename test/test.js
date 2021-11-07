@@ -1,5 +1,7 @@
 const { assert } = require("chai");
 
+// ganache: shop item wrap shoulder weird skin usage drive nephew want miracle refuse
+
 describe("Escrow", function() {
   let contract;
   let depositor;

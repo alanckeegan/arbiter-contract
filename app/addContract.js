@@ -14,12 +14,14 @@ export default async function addContract(id, contract, arbiter, beneficiary, va
   });
 
   document.getElementById(buttonId).addEventListener("click", async () => {
+
     const signer = provider.getSigner();
     await contract.connect(signer).approve();
   });
 }
 
 function createHTML(buttonId, arbiter, beneficiary, value) {
+
   return `
     <div class="existing-contract">
       <ul className="fields">
